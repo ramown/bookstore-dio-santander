@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col">
-        <app-filters></app-filters>
+        <app-filters (filtro)="filterBooksByPrice($event)"></app-filters>
     </div>
     <div class="col-md-10">
-        <app-product-list></app-product-list>
+        <app-product-list [books]="books"></app-product-list>
     </div>
 </div>

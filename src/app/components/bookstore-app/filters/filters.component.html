@@ -5,14 +5,14 @@
         <form>
             <div class="form-group">
                 <label for="de">De</label>
-                <input type="number" id="de" class="form-control m-2">
+                <input type="number" #de class="form-control m-2" [(ngModel)]="rangeFilter.from" [ngModelOptions]="{standalone: true}">
             </div>
             <div class="form-group">
                 <label for="ate">Até</label>
-                <input type="number" id="ate" class="form-control m-2">
+                <input type="number" #ate class="form-control m-2" [(ngModel)]="rangeFilter.to" [ngModelOptions]="{standalone: true}">
             </div>
 
-            <button class="btn btn-primary btn-block btn-sm m-2">Filtrar</button>
+            <button class="btn btn-primary btn-block btn-sm m-2" (click)="filterBooks()">Filtrar</button>
         </form>
     </div>
 </div>
