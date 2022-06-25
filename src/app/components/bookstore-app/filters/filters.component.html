@@ -12,7 +12,10 @@
                 <input type="number" #ate class="form-control m-2" [(ngModel)]="rangeFilter.to" [ngModelOptions]="{standalone: true}">
             </div>
 
-            <button class="btn btn-primary btn-block btn-sm m-2" (click)="filterBooks()">Filtrar</button>
+            <div class="btn-group">
+                <button class="btn btn-primary btn-block btn-sm m-2" (click)="filterBooks()">Filtrar</button>
+                <button class="btn btn-danger btn-block btn-sm m-2" (click)="clearFilter()">Limpar</button>
+            </div>
         </form>
     </div>
 </div>

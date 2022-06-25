@@ -28,4 +28,13 @@ export class FiltersComponent implements OnInit {
     this.filtro.emit(this.rangeFilter);
   }
 
+  clearFilter(){
+    this.rangeFilter = {
+      from: 0,
+      to: 0
+    }
+
+    this.filtro.emit(this.rangeFilter);
+  }
+
 }
